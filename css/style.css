@@ -9,8 +9,9 @@
     font-family: 'Schoolbell', cursive; 
 */
 
-main {
-    margin-top: 100px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 main, footer{
@@ -23,12 +24,12 @@ main, footer{
 main>section{
     border: 1px solid black;
     text-align: center;
-    height: 50px;
+    min-height: 50px;
 }
 footer>section{
     border: 1px solid black;
     text-align: center;
-    height: 50px;
+    min-height: 50px;
 }
 
 .slogan-image{
@@ -53,6 +54,43 @@ footer>section{
 .Intro{
     grid-column-end: span 4;
 }
+
+.Name {
+    font-size: 56px;
+    color: #38b6ff;
+    font-family: 'Courgette', cursive;
+}
+
+.Person-description{
+    margin-top: 5px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Aleo', serif;
+}
+
+.More-about-me {
+    margin-top: 1em;
+    margin-left:  122px;
+    margin-right: 122px;
+    margin-bottom: 1em;
+    padding: 20px;
+    font-size: 10px;
+    text-align: justify;
+	font-family: 'Alice', serif;
+    background: #d9d9d9;
+}
+
+
+.mAmHeading{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+
+
 
 .Intro-left{
     grid-column-end: span 2;
