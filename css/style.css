@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,300;1,400&family=Alice&family=Courgette&family=Schoolbell&display=swap');
+/* Fonts: 
+    font-family: 'Aleo', serif;
+
+    font-family: 'Alice', serif;
+
+    font-family: 'Courgette', cursive;
+
+    font-family: 'Schoolbell', cursive; 
+*/
+
 main {
     margin-top: 100px;
 }
