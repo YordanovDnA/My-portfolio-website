@@ -1,0 +1,48 @@
+main, footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 660px;
+    margin: 0 auto;
+}
+main>section{
+    border: 1px solid black;
+    text-align: center;
+    height: 50px;
+}
+footer>section{
+    border: 1px solid black;
+    text-align: center;
+    height: 50px;
+}
+
+.Intro{
+    grid-column-end: span 4;
+}
+
+.Intro-left{
+    grid-column-end: span 2;
+}
+
+.Intro-right{
+    grid-column-end: span 2;
+}
+
+.Projects-header{
+    grid-column-end: span 4;
+}
+
+
+.Projects-footer{
+    grid-column-end: span 4;
+}
+
+.More-skills{
+    grid-column-end: span 4;
+}
+
+.Footer-left{
+    grid-column-end: span 2;
+}
+.Footer-right{
+    grid-column-end: span 2;
+}
