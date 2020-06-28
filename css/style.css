@@ -17,6 +17,7 @@
 
 */
 
+/* 1. Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,300;1,400&family=Alice&family=Courgette&family=Schoolbell&display=swap');
 /* Fonts: 
     font-family: 'Aleo', serif;
@@ -26,9 +27,12 @@
     font-family: 'Courgette', cursive;
 
     font-family: 'Schoolbell', cursive; 
+
+    END of Fonts Import
 */
 
 
+/* 2. General declarations and main GRID system */
 
 *{
     margin: 0;
@@ -38,7 +42,7 @@
 main, footer{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    width: 660px;
+    width: 760px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,13 +75,9 @@ footer>section{
     margin-top: 51%;
 }
 
+/* END of General declarations and main GRID system */
 
-/* INTRO SECTION */
-
-.Intro{
-    grid-column-end: span 4;
-}
-
+/* 3. Header section */
 .Name {
     font-size: 56px;
     color: #38b6ff;
@@ -101,7 +101,7 @@ footer>section{
     font-size: 10px;
     text-align: justify;
 	font-family: 'Alice', serif;
-    background: #d9d9d9;
+    background: rgb(234, 234, 234);
 }
 
 .mAmHeading{
@@ -111,9 +111,16 @@ footer>section{
     text-transform: uppercase;
     display: block;
 }
-/*END INTRO*/
+/* END of Header section*/
 
-/*INTRO LEFT*/
+/* 4.INTRO SECTION */
+
+.Intro{
+    grid-column-end: span 4;
+}
+/*END of Intro*/
+
+/* 5. Intro Left*/
 
 .Intro-left{
     grid-column-end: span 2;
@@ -214,12 +221,12 @@ footer>section{
     grid-column-end: span 1;
 }
  .skill-scale {
-    color: #ff8872;
+    color: #38b6ff;
     grid-column-end: span 2;
  }
 
  .progressDots {
-    color: #ff8872;
+    color: #38b6ff;
     grid-column-end: span 2;
     padding-left: 15% !important;
  }
@@ -230,16 +237,17 @@ footer>section{
      margin-left: 10px;
      margin-top: 5px;
  }
-/* END INTRO LEFT*/
+/* END of Intro left*/
 
-/* INTRO RIGHT*/
+/* 6. Intro right*/
 
 .Intro-right{
     grid-column-end: span 2;
     display: grid;
     grid-template-columns: 20% 20% 60%;
-    background: #d9d9d9;
-    margin: 20px;
+    background: rgb(234, 234, 234);
+    margin: 20px 0px;
+    padding: 20px ;
     font-family: 'Aleo', serif;
 }
 
@@ -256,17 +264,26 @@ footer>section{
 .Years-animation {
     width: 5px;
     height: 90%;
-    background: #ff8872;
+    background: #38b6ff;
     animation-name: yearsLine;
     animation-duration: 15s;
     margin-left: auto;
     margin-right: auto;
 }
 
+@keyframes yearsLine{
+    0%{height: 0%;}
+    20%{height: 3%;}
+    40%{height: 20%;}
+    60%{height: 43%;}
+    80%{height: 75%;}
+    100%{height: 90%;}
+}
+
 .animationDots {
     position: relative;
     left: -5px;
-    color: #ff8872;
+    color: #38b6ff;
     
 }
 
@@ -291,18 +308,13 @@ footer>section{
     top: 17.2em;
 }
 
-@keyframes yearsLine{
-    0%{height: 0%;}
-    20%{height: 3%;}
-    40%{height: 20%;}
-    60%{height: 43%;}
-    80%{height: 75%;}
-    100%{height: 90%;}
+.year2016,.skills2016, .year2018, .skills2018,
+.year2019, .skills2019, .year2020, .skills2020{
+    display: none;
 }
 
 
-
-/* END INTRO RIGHT */
+/* END Intro rightT */
 
 .Projects-header{
     grid-column-end: span 4;
