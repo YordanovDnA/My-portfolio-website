@@ -1,3 +1,22 @@
+/* 
+            SUMMARY 
+    1. Fonts import 
+    2. General declarations and main GRID system
+    3. Heared section
+    4. Intro section
+    5. Intro left section
+    6. Intro Right section
+    7. Projects header
+    8. Projects grid
+    9. More projects
+    10. Projects footer
+    11. More skills header
+    12. More skills main
+    13. Footer Left
+    14. Footer Righ
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,300;1,400&family=Alice&family=Courgette&family=Schoolbell&display=swap');
 /* Fonts: 
     font-family: 'Aleo', serif;
@@ -8,6 +27,8 @@
 
     font-family: 'Schoolbell', cursive; 
 */
+
+
 
 *{
     margin: 0;
@@ -51,6 +72,8 @@ footer>section{
 }
 
 
+/* INTRO SECTION */
+
 .Intro{
     grid-column-end: span 4;
 }
@@ -81,7 +104,6 @@ footer>section{
     background: #d9d9d9;
 }
 
-
 .mAmHeading{
     font-weight: bold;
     font-size: 14px;
@@ -89,16 +111,198 @@ footer>section{
     text-transform: uppercase;
     display: block;
 }
+/*END INTRO*/
 
-
+/*INTRO LEFT*/
 
 .Intro-left{
     grid-column-end: span 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-height: 50px;
+    margin: 20px;
+    font-family: 'Aleo', serif;
+    
 }
+
+.Intro-left>div {
+    margin: 1px;
+    padding: 1px;
+}
+
+.ILHeading,.skillsHeading {
+    grid-column-end: span 3;
+    margin: 20px 0px !important;
+}
+
+.loveToDo-1 {
+
+}
+
+.loveToDo-1>.img{
+    width: 62.4844px;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loveToDo-1,.loveToDo-2,.loveToDo-3,.loveToDo-4,.loveToDo-5,.loveToDo-6>svg {
+    display: block;
+}
+
+.loveToDo-2 {
+    
+}
+
+.loveToDo-2>.img {
+    width: 52.59px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+}
+
+.loveToDo-3 {
+    
+}
+
+.loveToDo-3>.img {
+    width: 52.59px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.loveToDo-4 {
+    
+}
+
+.loveToDo-4>.img {
+    width: 40px;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loveToDo-5 {
+    
+}
+
+.loveToDo-5>.img {
+    width: 52.59px;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loveToDo-6 {
+    
+}
+
+.loveToDo-6>.img {
+    width: 52.59px;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.skillsHeading {
+    grid-column-end: span 3;
+}
+
+.skill {
+    grid-column-end: span 1;
+}
+ .skill-scale {
+    color: #ff8872;
+    grid-column-end: span 2;
+ }
+
+ .progressDots {
+    color: #ff8872;
+    grid-column-end: span 2;
+    padding-left: 15% !important;
+ }
+
+ .progressDots>i {
+     float: left;
+     font-size: 10px;
+     margin-left: 10px;
+     margin-top: 5px;
+ }
+/* END INTRO LEFT*/
+
+/* INTRO RIGHT*/
 
 .Intro-right{
     grid-column-end: span 2;
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    background: #d9d9d9;
+    margin: 20px;
+    font-family: 'Aleo', serif;
 }
+
+.Intro-heading {
+    grid-column-end: span 3;
+}
+
+.Intro-right-img {
+    grid-column-start: span 1;
+    grid-column-end: span 2;
+    grid-row-end: span 4;
+}
+
+.Years-animation {
+    width: 5px;
+    height: 90%;
+    background: #ff8872;
+    animation-name: yearsLine;
+    animation-duration: 15s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.animationDots {
+    position: relative;
+    left: -5px;
+    color: #ff8872;
+    
+}
+
+.d1,.d2,.d3,.d4 {
+    display: none;
+}
+
+.d1 {
+    top: 0px;
+    display: none;
+}
+
+.d2 {
+    top: 3.5em;
+}
+
+.d3 {
+    top: 9em;
+}
+
+.d4 {
+    top: 17.2em;
+}
+
+@keyframes yearsLine{
+    0%{height: 0%;}
+    20%{height: 3%;}
+    40%{height: 20%;}
+    60%{height: 43%;}
+    80%{height: 75%;}
+    100%{height: 90%;}
+}
+
+
+
+/* END INTRO RIGHT */
 
 .Projects-header{
     grid-column-end: span 4;
