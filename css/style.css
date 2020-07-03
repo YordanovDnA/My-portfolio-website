@@ -316,14 +316,39 @@ footer>section{
 
 /* END Intro rightT */
 
+/* Projects section */ 
+
 .Projects-header{
     grid-column-end: span 4;
+    height: 159px;
+    background: #4b4949;
+    color: #38b6ff;
+    font-size: 36px; 
+    font-family: 'Alice', serif;
+}
+.Projects-header > h2 {
+    margin-top: 40px;
 }
 
+.Projects {
+    margin: 5px;
+}
 
 .Projects-footer{
     grid-column-end: span 4;
+    height: 30px;
+    background: #4b4949;
+    color: #38b6ff;
+    font-size: 20px; 
+    font-family: 'Alice', serif;
 }
+.Projects-footer > a {
+    padding-top: 10px;
+    display: block;
+    color: #38b6ff;
+}
+
+/* END Projects */
 
 .More-skills{
     grid-column-end: span 4;
