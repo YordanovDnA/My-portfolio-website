@@ -128,7 +128,8 @@ footer>section{
     display: grid;
     grid-template-columns: auto auto auto;
     min-height: 50px;
-    margin: 20px;
+    margin: 20px 0px;
+    padding: 20px;
     font-family: 'Aleo', serif;
     
 }
@@ -340,16 +341,17 @@ footer>section{
 .Projects-main, .Projects-hidden{
     grid-column-end: span 4;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 .flip-card {
     background-color: transperent;
     height: 100%;
+    max-height: 180px;
     perspective: 1000px;
-  }
+}
   
-  .flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -357,30 +359,73 @@ footer>section{
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
+}
   
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
+}
   
-  .flip-card-front, .flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+}
   
-  .flip-card-front {
-    background-color: #bbb;
+.flip-card-front {
     color: black;
-  }
-  
-  .flip-card-back {
+}
+
+#flip-card-front-1 {
+    background: url("https://cdn.dribbble.com/users/80284/screenshots/3134610/fingerprint-icon.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#flip-card-front-2 {
+    background: url("../images/Menu-creation-app.png");
+    background-size: cover;
+    background-position: center center;
+}   
+
+#flip-card-front-3 {
+    background: url("../images/WordPress.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#flip-card-front-4 {
+    /* Here place the background,background-size & position */
+}
+
+#flip-card-front-5 {
+    /* Here place the background,background-size & position */
+}
+
+#flip-card-front-6 {
+    /* Here place the background,background-size & position */
+}
+
+#flip-card-front-7 {
+    /* Here place the background,background-size & position */
+}
+
+#flip-card-front-8 {
+    /* Here place the background,background-size & position */
+}
+
+
+
+.flip-card-front > img {
+    max-height: 180px;
+}
+
+.flip-card-back {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-  }
+}
 
 .Projects-footer{
     grid-column-end: span 4;
@@ -398,9 +443,83 @@ footer>section{
 
 /* END Projects */
 
+/* More Skills */
+
+.More-skills-header{
+    grid-column-end: span 4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.More-skills-header-left {
+    height: 100%;
+    background: #ff646b;
+}
+.More-skills-header-right{
+    height: 100%;
+    background: #2878d0;
+}
+
+
+
+.More-skills > h2 {
+    font-family: 'Schoolbell', cursive; 
+    font-weight: lighter;
+    color: #ff646b;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 73px;
+}
+
+.More-skills > h3 {
+    font-family: 'Alice', serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.More-skills > p {
+    font-size: 30px;
+    text-align: left;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.moreParticularSkills {
+    font-family: 'Schoolbell', cursive; 
+    margin-left: 20px;
+}
+
+.moreSkillsNumbersPink {
+    background-color: #ff646b;
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.moreSkillsNumbersBlue {
+    background-color: #2878d0;
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
 .More-skills{
     grid-column-end: span 4;
 }
+
+/* END More Skills */
 
 .Footer-left{
     grid-column-end: span 2;
