@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d6c9141bcd.js" crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body class="overlay">
     <header>
@@ -251,6 +254,27 @@
             <h2>My Projects</h2>
         </section>
         <section class="Projects-main">
+            <section class="Projects">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="" alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Project Name</h2>
+                            <span>(end-date)</span>
+                            <p>
+                                Short description of the project.
+                            </p>
+                            <a rel="modal:open" href="#ex1">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="ex1" class="modal">
+                <p>Modal popup 1</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
 
             <section class="Projects">
                 <div class="flip-card">
@@ -264,11 +288,16 @@
                             <p>
                                 Short description of the project.
                             </p>
-                            <a href="#">See more</a>
+                            <a rel="modal:open" href="#ex2">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <div id="ex2" class="modal">
+                <p>Modal popup 2</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
             <section class="Projects">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -281,11 +310,16 @@
                             <p>
                                 Short description of the project.
                             </p>
-                            <a href="#">See more</a>
+                            <a rel="modal:open" href="#ex3">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <div id="ex3" class="modal">
+                <p>Modal popup 3</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
             <section class="Projects">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -298,11 +332,16 @@
                             <p>
                                 Short description of the project.
                             </p>
-                            <a href="#">See more</a>
+                            <a rel="modal:open" href="#ex4">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <div id="ex4" class="modal">
+                <p>Modal popup 4</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
             <section class="Projects">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -315,11 +354,16 @@
                             <p>
                                 Short description of the project.
                             </p>
-                            <a href="#">See more</a>
+                            <a rel="modal:open" href="#ex5">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <div id="ex5" class="modal">
+                <p>Modal popup 5</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
             <section class="Projects">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -332,11 +376,16 @@
                             <p>
                                 Short description of the project.
                             </p>
-                            <a href="#">See more</a>
+                            <a rel="modal:open" href="#ex6">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <div id="ex6" class="modal">
+                <p>Modal popup 6</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
             <section class="Projects">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -349,11 +398,16 @@
                             <p>
                                 Short description of the project.
                             </p>
-                            <a href="#">See more</a>
+                            <a rel="modal:open" href="#ex7">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <div id="ex7" class="modal">
+                <p>Modal popup 7</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
             <section class="Projects">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -366,28 +420,16 @@
                             <p>
                                 Short description of the project.
                             </p>
-                            <a href="#">See more</a>
+                            <a rel="modal:open" href="#ex8">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="" alt="">
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a href="#">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div id="ex8" class="modal">
+                <p>Modal popup 8</p>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+
         </section>
         <section class="Projects-hidden">
             <section class="Projects">
