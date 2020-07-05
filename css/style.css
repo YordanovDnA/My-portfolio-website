@@ -46,6 +46,7 @@ main, footer{
     margin-left: auto;
     margin-right: auto;
 }
+
 main>section{
     border: 1px solid black;
     text-align: center;
@@ -333,6 +334,13 @@ footer>section{
 .Projects {
     margin: 5px;
     min-height: 180px;
+}
+
+
+.Projects-main, .Projects-hidden{
+    grid-column-end: span 4;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .flip-card {

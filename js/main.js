@@ -11,9 +11,13 @@ $(document).ready(function(){
     $(".d4").delay(11000).fadeIn(1000);
     $(".year2020").fadeIn(30000);
     $(".skills2020").fadeIn(30000);
+    $(".Projects-hidden").hide();
+    $("#Projects-button").click(function(){
+        $(".Projects-hidden").fadeToggle("slow");
+    });
 })
 $(window).load(function(){
     // PAGE IS FULLY LOADED  
     // FADE OUT YOUR OVERLAYING DIV
-    $('#overlay').fadeOut();
+    $('.overlay').fadeOut();
 });
