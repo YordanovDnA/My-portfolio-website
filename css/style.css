@@ -39,13 +39,14 @@
     padding: 0;
 }
 
-main, footer{
+main, .footer-grid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     width: 760px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 main>section{
     border: 1px solid black;
@@ -56,6 +57,11 @@ footer>section{
     border: 1px solid black;
     text-align: center;
     min-height: 50px;
+}
+
+footer{
+    width: 100%;
+    background-color: #4b4949;
 }
 
 .slogan-image{
@@ -441,25 +447,22 @@ footer>section{
     color: #38b6ff;
 }
 
+#Projects-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #38b6ff;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+#Projects-button:hover{
+    text-decoration: underline;
+}
+
 /* END Projects */
 
 /* More Skills */
-
-.More-skills-header{
-    grid-column-end: span 4;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-}
-
-.More-skills-header-left {
-    height: 100%;
-    background: #ff646b;
-}
-.More-skills-header-right{
-    height: 100%;
-    background: #2878d0;
-}
 
 
 
@@ -468,7 +471,7 @@ footer>section{
     font-weight: lighter;
     color: #ff646b;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 80px;
     font-size: 73px;
 }
 
@@ -523,7 +526,10 @@ footer>section{
 
 .Footer-left{
     grid-column-end: span 2;
+    min-height: 250px;
 }
+
 .Footer-right{
     grid-column-end: span 2;
+    min-height: 250px;
 }
