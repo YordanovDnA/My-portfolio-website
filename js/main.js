@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $(".zoom").delay(3000).animate({fontSize: '23px', fontSize: '40px'}, "slow");
     $(".zoom").animate({fontSize: '28px'}, "slow");
@@ -19,9 +20,18 @@ $(document).ready(function(){
     $("#Projects-button").click(function(){
         $(".Projects-hidden").slideToggle("slow");
     });
+    $(".flip-card-front").click(function(){
+        $(this).closest(".flip-card-inner").css("transform", "rotateY(180deg)");
+        $(this).closest(".flip-card-inner").find(".flip-card-back").click(function(){
+            $(this).closest(".flip-card-inner").removeAttr("style");
+        })
+    });
+    
 })
 $(window).load(function(){
     // PAGE IS FULLY LOADED  
     // FADE OUT YOUR OVERLAYING DIV
     $('.overlay').fadeOut();
 });
+
+

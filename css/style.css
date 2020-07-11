@@ -371,6 +371,7 @@ footer{
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
+
   
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -470,6 +471,7 @@ footer{
 #Projects-button:hover{
     text-decoration: underline;
 }
+
 
 /* END Projects */
 
