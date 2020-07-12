@@ -685,7 +685,21 @@
                 Footer-left
             </section>
             <section class="Footer-right">
-                Footer-right
+                <h2 id="emailFormSlogan">Why don't you drop me an email?</h2>
+                <div class="form">
+                    <form action="emailForm.php" method="post">
+                        <label for="name">Name</label>
+                        <input class="emailFormInputs" name="name" type="text" required>
+                        <label for="email">Email</label>
+                        <input class="emailFormInputs" name="email" type="email" required>
+                        <label for="text">Message:</label>
+                        <textarea name="text" id="emailTextField" cols="30" rows="10" required></textarea>
+                        <input id="submitButton" type="submit" value="Send">
+                    </form>
+                    <div class="emailSent">
+                        <h2>Your email was sent successfully. I will be in touch with you shortly!</h2>
+                    </div>
+                </div>
             </section>
         </div>
     </footer>
