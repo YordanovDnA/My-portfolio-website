@@ -1,7 +1,7 @@
 /* 
             SUMMARY 
     1. Fonts import 
-    2. General declarations and main GRID system
+    2. Resoinsive design and main GRID system
     3. Heared section
     4. Intro section
     5. Intro left section
@@ -32,7 +32,7 @@
 */
 
 
-/* 2. General declarations and main GRID system */
+/* 2. Responsive design and main GRID system */
 
 *{
     margin: 0;
@@ -82,7 +82,120 @@ footer{
     margin-top: 51%;
 }
 
-/* END of General declarations and main GRID system */
+@media screen and (max-width: 759px){
+    main, .footer-grid{
+        width: 360px;
+    }
+
+    div.Profile-image-div {
+        width: 20%;
+    }
+
+    p.More-about-me{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    h1.Name{
+        font-size: 36px;
+    }
+
+    p.Person-description{
+        font-size: 10px;
+    }
+
+    section.Intro-left{
+        grid-column-end: span 4;
+    }
+
+    section.Intro-right{
+        grid-column-end: span 4;
+    }
+    section.Projects {
+        min-height: 90px;
+    }
+
+    div.flip-card-front > h3{
+        font-size: 23px;
+    }
+
+    div.flip-card-back > h2, a{
+        font-size: 16px;
+    }
+
+    div.flip-card-back > p {
+        font-size: 10px;
+    }
+
+    h2.Intro-heading {
+        margin-bottom: 23px;
+    }
+
+    div.wrapperYear2016{
+        padding-top: 14px;
+    }
+
+    div.wrapperYear2018{
+        padding-top: 23px;
+    }
+
+    div.wrapperYear2019{
+        padding-top: 36px;
+    }
+
+    div.wrapperYear2020{
+        padding-top: 0px;
+    }
+
+    div.skills2016, div.skills2018, div.skills2019, div.skills2020 > span, p {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+
+    div.skills2016 {
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+    }
+
+    div.skills2018, div.skills2019, div.skills2020{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+    }
+    
+    div.d1 {
+        top: 15px;
+    }
+
+    div.d2 {
+        top: 3.5em;
+    }
+    
+    div.d3 {
+        top: 9em;
+    }
+    
+    div.d4 {
+        top: 12.2em;
+    }
+
+    p.wrapperMoreSkills {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    section.Footer-left{
+        grid-column-end: span 4;
+    }
+
+    section.Footer-right{
+        grid-column-end: span 4;
+    }
+    
+
+}
+
+/* Rasponsive resign and main GRID system */
 
 /* 3. Header section */
 .Name {
