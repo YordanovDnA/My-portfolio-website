@@ -263,9 +263,6 @@ footer{
     margin: 20px 0px !important;
 }
 
-.loveToDo-1 {
-
-}
 
 .loveToDo-1>.img{
     width: 62.4844px;
@@ -278,9 +275,6 @@ footer{
     display: block;
 }
 
-.loveToDo-2 {
-    
-}
 
 .loveToDo-2>.img {
     width: 52.59px;
@@ -289,9 +283,6 @@ footer{
     height: 60px;
 }
 
-.loveToDo-3 {
-    
-}
 
 .loveToDo-3>.img {
     width: 52.59px;
@@ -301,10 +292,6 @@ footer{
 }
 
 
-.loveToDo-4 {
-    
-}
-
 .loveToDo-4>.img {
     width: 40px;
     height: 60px;
@@ -312,19 +299,11 @@ footer{
     margin-left: auto;
 }
 
-.loveToDo-5 {
-    
-}
-
 .loveToDo-5>.img {
     width: 52.59px;
     height: 60px;
     margin-right: auto;
     margin-left: auto;
-}
-
-.loveToDo-6 {
-    
 }
 
 .loveToDo-6>.img {
@@ -464,7 +443,7 @@ footer{
 }
 
 .flip-card {
-    background-color: transperent;
+    background-color: transparent;
     height: 100%;
     max-height: 180px;
     perspective: 1000px;
@@ -525,28 +504,6 @@ footer{
     background-size: cover;
     background-position: center center;
 }
-
-#flip-card-front-4:before {
-    
-}
-
-#flip-card-front-5 {
-    /* Here place the background,background-size & position */
-}
-
-#flip-card-front-6 {
-    /* Here place the background,background-size & position */
-}
-
-#flip-card-front-7 {
-    /* Here place the background,background-size & position */
-}
-
-#flip-card-front-8 {
-    /* Here place the background,background-size & position */
-}
-
-
 
 .flip-card-front > img {
     max-height: 180px;
