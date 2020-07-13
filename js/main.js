@@ -26,6 +26,11 @@ $(document).ready(function(){
             $(this).closest(".flip-card-inner").removeAttr("style");
         })
     });
+    $("#submitButton").hover(function(){
+        $(this).attr("value", "GO!");
+    }, function(){
+        $(this).attr("value", "Send!");
+    });
     
 })
 $(window).load(function(){
