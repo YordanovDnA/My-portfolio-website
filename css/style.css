@@ -612,6 +612,33 @@ footer{
     min-height: 250px;
 }
 
+.socials {
+    margin-top: 20px;
+}
+
+.socials>a {
+    position: relative;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.socials > a:hover {
+    top:-5px;
+}
+
+#socialIconsSlogan {
+    margin-top: 30px;
+    padding: 0px 20px;
+    color: #38b6ff;
+    text-shadow: 1px 1px 4px black;
+}
+
+.socialIcons {
+    font-size: 26px;
+    color: black;
+    cursor: pointer;
+}
+
 .Footer-right{
     text-align: center;
     grid-column-end: span 2;

@@ -31,6 +31,12 @@ $(document).ready(function(){
     }, function(){
         $(this).attr("value", "Send!");
     });
+
+    $(".socialIcons").hover(function(){
+        $(this).css("color", "white")
+    }, function(){
+        $(this).css("color", "black")
+    })
     
 })
 $(window).load(function(){
