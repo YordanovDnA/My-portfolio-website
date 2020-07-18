@@ -2,7 +2,7 @@
             SUMMARY 
     1. Fonts import 
     2. Resoinsive design and main GRID system
-    3. Heared section
+    3. Header section
     4. Intro section
     5. Intro left section
     6. Intro Right section
@@ -32,12 +32,22 @@
 */
 
 
-/* 2. Responsive design and main GRID system */
+/* 2. Responsive design, main GRID system, general declarations */
 
 *{
     margin: 0;
     padding: 0;
 }
+
+.bordered-box-shadow {
+    border: 1px solid black;
+    box-shadow: 3px 4px 6px black;
+}
+
+.box-shadow {
+    box-shadow: 3px 4px 6px black;
+}
+
 
 main, .footer-grid{
     display: grid;
@@ -82,10 +92,16 @@ footer{
     margin-top: 51%;
 }
 
+@media screen and (min-width: 760px){
+    
+}
+
 @media screen and (max-width: 759px){
     main, .footer-grid{
         width: 360px;
     }
+
+    
 
     div.Profile-image-div {
         width: 20%;
@@ -411,6 +427,12 @@ footer{
 
 /* Projects section */ 
 
+@media only screen and (max-width: 760px){
+    .Projects {
+        grid-column-end: span 2;
+    }
+}
+
 .Projects-header{
     grid-column-end: span 4;
     height: 159px;
@@ -425,106 +447,108 @@ footer{
 
 .Projects {
     margin: 5px;
-    min-height: 180px;
+    min-height: 250px;
 }
 
+.Projects-hidden {
+    margin: 5px;
+    min-height: 250px;
+    display: none;
+}
+
+.Projects-main {
+    margin: 15px 0px;
+}
 
 .Projects-main, .Projects-hidden{
     grid-column-end: span 4;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 50% 50%;
 }
 
-.flip-card {
-    background-color: transparent;
-    height: 100%;
-    max-height: 180px;
-    perspective: 1000px;
-}
-  
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background: #4b4949;
-}
-  
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+#Project-1 {
+    background: url("../images/Menu-creation-app.png");
+    background-size: cover;
+    background-position: center center;
 }
 
-  
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-div.flip-card-back > h2{
-    font-size: 26px;
-    color: #38b6ff;
-    padding: 10px;
-}
-
-div.flip-card-back > p {
-    font-size: 14px;
-    margin: 5px;
-    color: white !important;
-}
-
-div.flip-card-back > a {
-    color: black;
-    text-decoration: none;
-    padding: 3px;
-    background-color: #05F29B;
-    border-radius: 5px;
-}
-  
-.flip-card-front {
-    color: black;
-}
-
-.flip-card-front > h3 {
-    font-size: 46px;
-    color: #38b6ff;
-    margin-top: 30px;
-    text-shadow: 1px 1px 4px black;
-    font-family: 'Alice', serif;
-    
-    
-}
-
-#flip-card-front-1 {
+#Project-2 {
     background: url("https://cdn.dribbble.com/users/80284/screenshots/3134610/fingerprint-icon.png");
     background-size: cover;
     background-position: center center;
 }
 
-#flip-card-front-2 {
-    background: url("../images/Menu-creation-app.png");
-    background-size: cover;
-    background-position: center center;
-}   
-
-#flip-card-front-3 {
-    background: url("../images/WordPress.jpg");
+#Project-3 {
+    background: url("../images/wordpress.jpg");
     background-size: cover;
     background-position: center center;
 }
 
-.flip-card-front > img {
-    max-height: 180px;
+.Projects-inner {
+    min-height: 250px;
 }
 
-.flip-card-back {
-    transform: rotateY(180deg);
+ .Projects-inner:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0);
 }
+
+.Projects:active {
+    box-shadow: 1px 1px 1px black !important;
+}
+
+
+.Projects-bottom > h2 {
+    background-color: #4b4949;
+	text-align: center;
+	color: #38b6ff;
+	font-family: 'Aleo', serif;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 2px black;
+	line-height: 35px;
+	letter-spacing: 5px;
+	font-size: 20px;
+	padding: 0px 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 .Projects-footer{
     grid-column-end: span 4;

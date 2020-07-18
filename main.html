@@ -12,13 +12,15 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Forced the browser to clear the cache-->
+        <meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT">
+        <meta http-equiv="Pragma" content="no-cache">
+
     <title>Iliyan Yordanov - Portfolio website</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d6c9141bcd.js" crossorigin="anonymous"></script>
-    <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body class="overlay">
     <header>
@@ -45,7 +47,7 @@
             <p class="Person-description">
                 (Full-stack developer)
             </p>
-            <p class="More-about-me">
+            <p class="More-about-me box-shadow">
                 <span class="mAmHeading">
                     What's up? Get to know me a little more!
                 </span>
@@ -199,7 +201,7 @@
                 <i class="fas fa-circle"></i>    
             </div> 
         </section>
-        <section class="Intro-right">
+        <section class="Intro-right bordered-box-shadow">
             <h2 class="Intro-heading">Experience</h2>
             <div class="Years wrapperYear2016">
                 <span class="year2016">2016</span>
@@ -259,408 +261,48 @@
             </div>
         </section>
         
-        <section class="Projects-header">
+        <section class="Projects-header bordered-box-shadow">
             <h2>My Projects</h2>
         </section>
         <section class="Projects-main">
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-1" class="flip-card-front">
-                            
-                        </div>
-                        <div class="flip-card-back">
-                           
-                            <h2>FingerIN</h2>
-                            <span>(In progress)</span>
-                            <p>
-                                FingerIn is an attendance system working with Arduino Uno Wi-Fi and fingerprint scanner to signing in and out workers. 
-                            </p>
-                            <a rel="modal:open" href="#ex1">See more</a>
-                        </div>
-                    </div>
+            <div class="Projects bordered-box-shadow">
+                <div id="Project-1" class="Projects-inner">
                 </div>
-            </section>
-            <div id="ex1" class="modal">
-                <p>Modal popup 1</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
+                <div id="myModal-1" class="modal">
 
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-2" class="flip-card-front">
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Menu creation</h2>
-                            <span>(2020)</span>
-                            <p>
-                                This food creation application was created for Sofimarten. They wanted a web application where they can make their lunch menu every day. 
-                            </p>
-                            <a rel="modal:open" href="#ex2">See more</a>
-                        </div>
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal Project 1..</p>
                     </div>
+                    </div>
+                <div class="Projects-bottom">
+                    <h2>Menu creation app</h2>
                 </div>
-            </section>
-            <div id="ex2" class="modal">
-                <p>Modal popup 2</p>
-                <a href="#" rel="modal:close">Close</a>
+                
             </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-3" class="flip-card-front">
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>WordPress projects</h2>
-                            <span>(In progress)</span>
-                            <p>
-                                Here you can find the WordPress websites I built. 
-                            </p>
-                            <a rel="modal:open" href="#ex3">See more</a>
-                        </div>
-                    </div>
+            <!--Modal Project 1-->
+            <div id="Project-2" class="Projects bordered-box-shadow">
+                <div class="Projects-inner">
                 </div>
-            </section>
-            <div id="ex3" class="modal">
-                <p>Modal popup 3</p>
-                <a href="#" rel="modal:close">Close</a>
+                <div class="Projects-bottom">
+                    <h2>Finger attendence</h2>
+                </div>
             </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-4" class="flip-card-front">
-                            <h3>Coming soon</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#ex4">See more</a>
-                        </div>
-                    </div>
+            <div id="Project-3" class="Projects bordered-box-shadow">
+                <div class="Projects-inner">
                 </div>
-            </section>
-            <div id="ex4" class="modal">
-                <p>Modal popup 4</p>
-                <a href="#" rel="modal:close">Close</a>
+                <div class="Projects-bottom">
+                    <h2>WordPress websites</h2>
+                </div>
             </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-5" class="flip-card-front">
-                            <h3>Coming soon</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#ex5">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="ex5" class="modal">
-                <p>Modal popup 5</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-6" class="flip-card-front">
-                            <h3>Coming soon</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#ex6">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="ex6" class="modal">
-                <p>Modal popup 6</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-" class="flip-card-front">
-                            <h3>Coming soon</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#ex7">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="ex7" class="modal">
-                <p>Modal popup 7</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-8" class="flip-card-front">
-                            <h3>Coming soon</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#ex8">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="ex8" class="modal">
-                <p>Modal popup 8</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="flip-card-front-9" class="flip-card-front">
-                            <h3>Coming soon</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#ex9">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="ex9" class="modal">
-                <p>Modal popup 9</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-        </section>
-        <section class="Projects-hidden">
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="hidden-flip-card-front-1" class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#hx1">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx1" class="modal">
-                <p>Hide Modal popup 1</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="hidden-flip-card-front-" class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#hx2">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx2" class="modal">
-                <p>Hide Modal popup 2</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="hidden-flip-card-front-3" class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="open:modal" href="#hx3">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx3" class="modal">
-                <p>Hide Modal popup 3</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-            
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="hidden-flip-card-front-4" class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#hx4">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx4" class="modal">
-                <p>Hide Modal popup 4</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="hidden-flip-card-front-5" class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#hx5">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx5" class="modal">
-                <p>Hide Modal popup 5</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div id="hidden-flip-card-front-6" class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#hx6">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx6" class="modal">
-                <p>Hide Modal popup 6</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div id="hidden-flip-card-front-7" class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="modal:open" href="#hx7">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx7" class="modal">
-                <p>Hide Modal popup 7</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="hidden-flip-card-front-8" class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="open:modal" href="#hx8">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx8" class="modal">
-                <p>Hide Modal popup 8</p>
-                <a href="#" rel="modal:close">Close</a>
-            </div>
-
-            <section class="Projects">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div id="hidden-flip-card-front-9" class="flip-card-front">
-                            <h3>More...</h3>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2>Project Name</h2>
-                            <span>(end-date)</span>
-                            <p>
-                                Short description of the project.
-                            </p>
-                            <a rel="open:modal" href="#hx9">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="hx9" class="modal">
-                <p>Hide Modal popup 9</p>
-                <a href="#" rel="modal:close">Close</a>
+            <div class="Projects-hidden">
+                <div id="" class="">1</div>
+                <div id="" class="">2</div>
+                <div id="" class="">3</div>
             </div>
         </section>
-        <section class="Projects-footer">
+        <section class="Projects-footer bordered-box-shadow">
             <button id="Projects-button">See more...</button>
         </section>
         
@@ -729,6 +371,6 @@
             </section>
         </div>
     </footer>
-
+    <script src="js/main.js?newversion"></script>
 </body>
 </html>

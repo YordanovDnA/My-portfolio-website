@@ -1,4 +1,10 @@
-
+// Close the modal when click somewhere
+var modal = document.querySelector(".modal");
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 $(document).ready(function(){
     $(".zoom").delay(3000).animate({fontSize: '23px', fontSize: '40px'}, "slow");
     $(".zoom").animate({fontSize: '28px'}, "slow");
@@ -36,13 +42,22 @@ $(document).ready(function(){
         $(this).css("color", "white")
     }, function(){
         $(this).css("color", "black")
-    })
+    });
+
+    $(".Projects-inner").click(function(){
+        $(this).closest(".Projects").find("#myModal-1").fadeIn();
+    });
+
+    $(".close").click(function(){
+        $(".modal").fadeOut();
+    });
+
     
-})
-$(window).load(function(){
-    // PAGE IS FULLY LOADED  
-    // FADE OUT YOUR OVERLAYING DIV
-    $('.overlay').fadeOut();
 });
+// $(window).load(function(){
+//     // PAGE IS FULLY LOADED  
+//     // FADE OUT YOUR OVERLAYING DIV
+//     $('.overlay').fadeOut();
+// });
 
 
