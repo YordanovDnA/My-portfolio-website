@@ -714,22 +714,21 @@
             <section class="Footer-right">
                 <h2 id="emailFormSlogan">Why don't you drop me an email?</h2>
                 <div class="form">
-                    <form action="emailForm.php" method="post">
+                    <form action="?" method="post">
                         <label for="name">Name</label>
                         <input class="emailFormInputs" name="name" type="text" required>
                         <label for="email">Email</label>
                         <input class="emailFormInputs" name="email" type="email" required>
                         <label for="text">Message:</label>
                         <textarea name="text" id="emailTextField" cols="30" rows="10" required></textarea>
-                        <input id="submitButton" type="submit" value="Send">
+                        <div class="g-recaptcha" data-sitekey="6LdD3LIZAAAAAG2Fj5wsKenE2sQhAJzVP51ckmw0"></div>
+
+                        <input id="submitButton" type="submit" name="submitBtn" value="Send">
                     </form>
-                    <div class="emailSent">
-                        <h2>Your email was sent successfully. I will be in touch with you shortly!</h2>
-                    </div>
                 </div>
             </section>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+
 </body>
 </html>

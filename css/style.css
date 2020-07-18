@@ -119,16 +119,6 @@ footer{
         font-size: 23px;
     }
 
-    .flip-card-back > h2{
-        font-size: 16px;
-        color: #38b6ff;
-    }
-
-    .flip-card-back > p {
-        font-size: 10px;
-        margin: 5px;
-        color: white;
-    }
 
     h2.Intro-heading {
         margin-bottom: 23px;
@@ -474,6 +464,26 @@ footer{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+div.flip-card-back > h2{
+    font-size: 26px;
+    color: #38b6ff;
+    padding: 10px;
+}
+
+div.flip-card-back > p {
+    font-size: 14px;
+    margin: 5px;
+    color: white !important;
+}
+
+div.flip-card-back > a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    background-color: #05F29B;
+    border-radius: 5px;
 }
   
 .flip-card-front {
