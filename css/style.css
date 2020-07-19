@@ -101,7 +101,9 @@ footer{
         width: 360px;
     }
 
-    
+    .More-about-me{
+        font-size: 10px !important;
+    }
 
     div.Profile-image-div {
         width: 20%;
@@ -223,11 +225,11 @@ footer{
 
 .More-about-me {
     margin-top: 1em;
-    margin-left:  122px;
-    margin-right: 122px;
+    margin-left:  70px;
+    margin-right: 70px;
     margin-bottom: 1em;
     padding: 20px;
-    font-size: 10px;
+    font-size: 16px;
     text-align: justify;
 	font-family: 'Alice', serif;
     background: rgb(234, 234, 234);
