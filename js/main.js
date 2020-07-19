@@ -1,10 +1,3 @@
-// Close the modal when click somewhere
-var modal = document.querySelector(".modal");
-window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
 $(document).ready(function(){
     $(".zoom").delay(3000).animate({fontSize: '23px', fontSize: '40px'}, "slow");
     $(".zoom").animate({fontSize: '28px'}, "slow");
@@ -22,9 +15,11 @@ $(document).ready(function(){
     $(".d4").delay(11000).fadeIn(1000);
     $(".year2020").delay(11000).fadeIn(5000);
     $(".skills2020").delay(11000).fadeIn(5000);
-    $(".Projects-hidden").hide();
     $("#Projects-button").click(function(){
-        $(".Projects-hidden").slideToggle("slow");
+        $(".message").slideToggle("slow");
+        $(".message").find(".close").click(function(){
+            $(this).closest(".message").slideUp("slow");
+        });
     });
     $(".flip-card-front").click(function(){
         $(this).closest(".flip-card-inner").css("transform", "rotateY(180deg)");
@@ -45,7 +40,12 @@ $(document).ready(function(){
     });
 
     $(".Projects-inner").click(function(){
-        $(this).closest(".Projects").find("#myModal-1").fadeIn();
+        $(this).closest(".Projects").find(".modal").fadeIn();
+        $(this).closest(".Projects").find(".modal").attr("id", "modal-close");
+        $(this).closest(".Projects").find("#modal-close").click(function(){
+            $(this).fadeOut();
+            $(this).removeAttr("id");
+        });
     });
 
     $(".close").click(function(){
