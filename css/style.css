@@ -492,6 +492,16 @@ footer{
     background-position: center center;
 }
 
+#Project-5 {
+    background: url("../images/FarmersBusiness.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.display-none{
+    display: none;
+}
+
 .Projects-inner {
     min-height: 250px;
 }

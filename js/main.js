@@ -16,10 +16,7 @@ $(document).ready(function(){
     $(".year2020").delay(11000).fadeIn(5000);
     $(".skills2020").delay(11000).fadeIn(5000);
     $("#Projects-button").click(function(){
-        $(".message").slideToggle("slow");
-        $(".message").find(".close").click(function(){
-            $(this).closest(".message").slideUp("slow");
-        });
+        $(".display-none").toggle("slow");
     });
     $(".flip-card-front").click(function(){
         $(this).closest(".flip-card-inner").css("transform", "rotateY(180deg)");
